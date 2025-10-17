@@ -214,13 +214,7 @@ Para criar um novo banco de dados para a sua instância no portal do Azure, siga
 
 6. Use **Criar** para implantar seu banco de dados.
 <br>
-
-
-
-
-
-
-
+<br>
 
 
 
