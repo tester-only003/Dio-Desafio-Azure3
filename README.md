@@ -36,7 +36,7 @@ Para sua instância, siga estas etapas: <br>
 <img width="1474" height="487" alt="Azure-SQL-Manageg-Instance1" src="https://github.com/user-attachments/assets/598420b3-55ea-4b61-9717-696daac73321" />
 <br>
 <br>
-<img width="591" height="560" alt="Opções-Instância-Gerida-SQL-Azure1" src="https://github.com/user-attachments/assets/ac318483-a8fe-4eea-a260-c946e8ef0608" />
+<img width="491" height="460" alt="Opções-Instância-Gerida-SQL-Azure1" src="https://github.com/user-attachments/assets/ac318483-a8fe-4eea-a260-c946e8ef0608" />
 <br>
 <br>
 
@@ -139,6 +139,86 @@ Adicione marcas aos recursos no modelo do ARM (modelo do Azure Resource Manager)
 <br>
 
 Selecione **Examinar + criar** para prosseguir.
+<br>
+<br>
+
+
+#### Examinar + criar
+Na guia **Revisar + criar**, examine suas escolhas e selecione **Criar** para implantar sua instância gerenciada de SQL.
+<br>
+<br>
+
+
+#### Monitorar o progresso da implantação
+1. Selecione o ícone Notificações para exibir o status da implantação.
+<img width="383" height="143" alt="Deployment-in-progress1" src="https://github.com/user-attachments/assets/60ba8d5e-557b-4f4b-bdc5-dca25c39bd2f" />
+<br>
+<br>
+
+
+2. Selecione **Implantação em andamento** na notificação para abrir a janela da Instância Gerenciada de SQL e monitorar mais detalhadamente o progresso da implantação.
+<br>
+
+
+3. Depois que a implantação for concluída, navegue até o grupo de recursos para exibir sua instância gerenciada de SQL:
+<img width="580" height="250" alt="Instancia_gerenciada1" src="https://github.com/user-attachments/assets/92e5a60a-678d-4870-85f3-f707489a4c7e" />
+<br>
+<br>
+
+>**DICA** <br>
+Se você fechou o navegador da Web ou se afastou da tela de progresso da implantação, poderá monitorar a operação de provisionamento por meio da página Visão geral da instância gerenciada de SQL no portal do Azure, no PowerShell ou na CLI do Azure.
+
+<br>
+<br>
+
+
+#### Revisar configurações de rede
+Selecione o recurso **Tabela de rotas** em seu grupo de recursos para examinar o objeto padrão de tabela de rotas definido pelo usuário e as entradas para rotear o tráfego de e dentro da rede virtual da Instância Gerenciada de SQL. Para alterar ou adicionar rotas, abra **Rotas** nas configurações da tabela de rotas.
+<br>
+
+Selecione o objeto do **Grupo de segurança de rede** para examinar as regras de segurança de entrada e saída. Para alterar ou adicionar regras, abra **Regras de Segurança de Entrada** e **Regras de Segurança de Saída** nas configurações do grupo de segurança de rede.
+
+<img width="613" height="474" alt="Rulesin-Ruleson1" src="https://github.com/user-attachments/assets/07662744-2fe6-410f-9583-0671cfc59034" />
+<br>
+<br>
+
+
+> **Importante**
+Se você tiver habilitado o ponto de extremidade público para a Instância Gerenciada de SQL, abra as portas para permitir conexões do tráfego de rede com a Instância Gerenciada de SQL vindo da Internet pública.
+
+<br>
+<br>
+
+
+### Criar banco de dados
+
+Para criar um novo banco de dados para a sua instância no portal do Azure, siga estas etapas:
+<br>
+
+1. Acesse a <a href="https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Sql%2FmanagedInstances">Instância Gerenciada de SQL no portal do Azure.</a>
+<br>
+
+2. Na página **Visão geral**, escolha **+ Novo banco de dados** da sua instância gerenciada de SQL para abrir a página **Criar banco de dados gerenciado do SQL do Azure**.
+<img width="538" height="171" alt="New-database1" src="https://github.com/user-attachments/assets/d4bd91c5-451f-46ce-bec6-fcece03fef6c" />
+<br>
+<br>
+
+3. Dê um nome para o banco de dados na guia **Básico**.
+<br>
+
+4. Na guia **Fonte de dados**, selecione **Nenhuma** para um banco de dados vazio ou restaure um banco de dados a partir do backup.
+<br>
+
+5. Defina as configurações restantes nas guias restantes e selecione **Revisar + criar** para validar suas escolhas.
+<br>
+
+6. Use **Criar** para implantar seu banco de dados.
+<br>
+
+
+
+
+
 
 
 
